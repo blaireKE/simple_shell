@@ -173,13 +173,13 @@ int cmd_exec(data_shell *datash);
 char *_getenv(const char *name, char **_environ);
 int _env(data_shell *datash);
 
-/* _environ2.c */
+/* _environment2.c */
 char *copy_info(char *name, char *value);
 void set_env(char *name, char *value, data_shell *datash);
 int _setenv(data_shell *datash);
 int _unsetenv(data_shell *datash);
 
-/* _cd.c */
+/* cd.c */
 void cd_dot(data_shell *datash);
 void cd_to(data_shell *datash);
 void cd_previous(data_shell *datash);
