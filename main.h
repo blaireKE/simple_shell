@@ -128,7 +128,7 @@ int _isdigit(const char *s);
 /* exe_strrev.c */
 void rev_string(char *s);
 
-/* _syntax_error.c */
+/* syntax_3rror.c */
 int repeated_char(char *input, int i);
 int error_sep_op(char *input, int i, char last);
 int first_char(char *input, int *i);
@@ -142,7 +142,7 @@ void shell_loop(data_shell *datash);
 /* read_line.c */
 char *read_line(int *i_eof);
 
-/* _split.c */
+/* split.c */
 char *swap_char(char *input, int bool);
 void add_nodes(sep_list **head_s, line_list **head_l, char *input);
 void go_next(sep_list **list_s, line_list **list_l, data_shell *datash);
@@ -194,7 +194,7 @@ int (*get_builtin(char *cmd))(data_shell *datash);
 /* exit_shell.c */
 int exit_shell(data_shell *datash);
 
-/* _get_length.c */
+/* get_l3ngth.c */
 int get_len(int n);
 char *aux_itoa(int n);
 int _atoi(char *s);
@@ -213,7 +213,7 @@ char *error_permission(char **args);
 char *error_path_126(data_shell *datash);
 
 
-/* _get_error.c */
+/*get_3rror.c */
 int get_error(data_shell *datash, int eval);
 
 /* get_sigint.c */
@@ -231,7 +231,7 @@ void aux_help(void);
 void aux_help_alias(void);
 void aux_help_cd(void);
 
-/* _get_help.c */
+/* get_h3lp.c */
 int get_help(data_shell *datash);
 
 #endif
