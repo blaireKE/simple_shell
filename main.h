@@ -128,7 +128,7 @@ int _isdigit(const char *s);
 /* exe_strrev.c */
 void rev_string(char *s);
 
-/* syntax_3rror.c */
+/* syntax_error.c */
 int repeated_char(char *input, int i);
 int error_sep_op(char *input, int i, char last);
 int first_char(char *input, int *i);
@@ -185,7 +185,7 @@ void cd_to(data_shell *datash);
 void cd_previous(data_shell *datash);
 void cd_to_home(data_shell *datash);
 
-/* cd_sh3ll.c */
+/* _cd_shell.c */
 int cd_shell(data_shell *datash);
 
 /* get_builtin.c */
@@ -194,7 +194,7 @@ int (*get_builtin(char *cmd))(data_shell *datash);
 /* exit_shell.c */
 int exit_shell(data_shell *datash);
 
-/* get_l3ngth.c */
+/* get_length.c */
 int get_len(int n);
 char *aux_itoa(int n);
 int _atoi(char *s);
@@ -213,7 +213,7 @@ char *error_permission(char **args);
 char *error_path_126(data_shell *datash);
 
 
-/*get_3rror.c */
+/*get_error.c */
 int get_error(data_shell *datash, int eval);
 
 /* get_sigint.c */
@@ -231,7 +231,7 @@ void aux_help(void);
 void aux_help_alias(void);
 void aux_help_cd(void);
 
-/* get_h3lp.c */
+/* get_help.c */
 int get_help(data_shell *datash);
 
 #endif
