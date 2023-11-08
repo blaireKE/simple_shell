@@ -102,7 +102,7 @@ void free_sep_list(sep_list **head);
 line_list *add_line_node_end(line_list **head, char *line);
 void free_line_list(line_list **head);
 
-/* aux_lists1.c */
+/* auxilary_lists1.c */
 r_var *add_rvar_node(r_var **head, int lvar, char *var, int lval);
 void free_rvar_list(r_var **head);
 
@@ -185,7 +185,7 @@ void cd_to(data_shell *datash);
 void cd_previous(data_shell *datash);
 void cd_to_home(data_shell *datash);
 
-/* cd_shell.c */
+/* cd_sh3ll.c */
 int cd_shell(data_shell *datash);
 
 /* get_builtin.c */
@@ -199,13 +199,13 @@ int get_len(int n);
 char *aux_itoa(int n);
 int _atoi(char *s);
 
-/* env_error.c */
+/* environment_error.c */
 char *strcat_cd(data_shell *, char *, char *, char *);
 char *error_get_cd(data_shell *datash);
 char *error_not_found(data_shell *datash);
 char *error_exit_shell(data_shell *datash);
 
-/* env_error1.c */
+/* environment_error1.c */
 char *error_get_alias(char **args);
 char *error_env(data_shell *datash);
 char *error_syntax(char **args);
@@ -219,14 +219,14 @@ int get_error(data_shell *datash, int eval);
 /* get_sigint.c */
 void get_sigint(int sig);
 
-/* aux_hlp.c */
+/* auxilary_help.c */
 void aux_help_env(void);
 void aux_help_setenv(void);
 void aux_help_unsetenv(void);
 void aux_help_general(void);
 void aux_help_exit(void);
 
-/* aux_hlp1.c */
+/* auxilary_help1.c */
 void aux_help(void);
 void aux_help_alias(void);
 void aux_help_cd(void);
