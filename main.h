@@ -118,14 +118,14 @@ void _memcpy(void *newptr, const void *ptr, unsigned int size);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char **_reallocdp(char **ptr, unsigned int old_size, unsigned int new_size);
 
-/* exe_strdup.c */
+/* _exe_strdup.c */
 char *_strdup(const char *s);
 int _strlen(const char *s);
 int cmp_chars(char str[], const char *delim);
 char *_strtok(char str[], const char *delim);
 int _isdigit(const char *s);
 
-/* exe_strrev.c */
+/* _exe_strrev.c */
 void rev_string(char *s);
 
 /* syntax_error.c */
@@ -155,21 +155,21 @@ int check_vars(r_var **h, char *in, char *st, data_shell *data);
 char *replaced_input(r_var **head, char *input, char *new_input, int nlen);
 char *rep_var(char *input, data_shell *datash);
 
-/* get_line.c */
+/* _get_line.c */
 void bring_line(char **lineptr, size_t *n, char *buffer, size_t j);
 ssize_t get_line(char **lineptr, size_t *n, FILE *stream);
 
-/* exe_line.c */
+/* _exe_line.c */
 int exec_line(data_shell *datash);
 
-/* exe_cmd.c */
+/* _exe_cmd.c */
 int is_cdir(char *path, int *i);
 char *_which(char *cmd, char **_environ);
 int is_executable(data_shell *datash);
 int check_error_cmd(char *dir, data_shell *datash);
 int cmd_exec(data_shell *datash);
 
-/* environ1.c */
+/* environment1.c */
 char *_getenv(const char *name, char **_environ);
 int _env(data_shell *datash);
 
@@ -188,10 +188,10 @@ void cd_to_home(data_shell *datash);
 /* _cd_shell.c */
 int cd_shell(data_shell *datash);
 
-/* get_builtin.c */
+/* _get_builtin.c */
 int (*get_builtin(char *cmd))(data_shell *datash);
 
-/* exit_shell.c */
+/* _exit_shell.c */
 int exit_shell(data_shell *datash);
 
 /* get_length.c */
@@ -216,7 +216,7 @@ char *error_path_126(data_shell *datash);
 /*get_error.c */
 int get_error(data_shell *datash, int eval);
 
-/* get_sigint.c */
+/* _get_sigint.c */
 void get_sigint(int sig);
 
 /* auxilary_help.c */
