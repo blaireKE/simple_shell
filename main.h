@@ -113,7 +113,7 @@ int _strcmp(char *s1, char *s2);
 char *_strchr(char *s, char c);
 int _strspn(char *s, char *accept);
 
-/* memcpy.c */
+/* _memcpy.c */
 void _memcpy(void *newptr, const void *ptr, unsigned int size);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char **_reallocdp(char **ptr, unsigned int old_size, unsigned int new_size);
@@ -135,11 +135,11 @@ int first_char(char *input, int *i);
 void print_syntax_error(data_shell *datash, char *input, int i, int bool);
 int check_syntax_error(data_shell *datash, char *input);
 
-/* shell_loop.c */
+/* _shell_loop.c */
 char *without_comment(char *in);
 void shell_loop(data_shell *datash);
 
-/* read_line.c */
+/* _read_line.c */
 char *read_line(int *i_eof);
 
 /* split.c */
@@ -149,7 +149,7 @@ void go_next(sep_list **list_s, line_list **list_l, data_shell *datash);
 int split_commands(data_shell *datash, char *input);
 char **split_line(char *input);
 
-/* rep_var.c */
+/* _rep_var.c */
 void check_env(r_var **h, char *in, data_shell *data);
 int check_vars(r_var **h, char *in, char *st, data_shell *data);
 char *replaced_input(r_var **head, char *input, char *new_input, int nlen);
